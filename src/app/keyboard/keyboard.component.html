@@ -1,0 +1,16 @@
+<div class="keyboard">
+    <div class="row">
+      <button *ngFor="let key of row1" (click)="handleKeyPress(key)">{{ key }}</button>
+    </div>
+    <div class="row">
+      <button *ngFor="let key of row2" (click)="handleKeyPress(key)">{{ key }}</button>
+    </div>
+    <div class="row">
+      <button *ngFor="let key of row3" (click)="handleKeyPress(key)">{{ key }}</button>
+    </div>
+    <div class="row">
+      <button (click)="handleBackspace()">Backspace</button>
+      <button (click)="handleEnter()">Enter</button>
+      <button (click)="handleSpace()">Space</button>
+    </div>
+  </div>
